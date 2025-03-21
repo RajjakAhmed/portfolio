@@ -82,14 +82,18 @@ const ProfileSection = () => {
       {/* Content Container */}
       <div className="flex flex-col md:flex-row items-center gap-8 text-center md:text-left">
         
-        {/* Desktop Profile Image */}
-        <img
-          ref={imageDesktopRef}
-          src="rajjak.png"
-          alt="Profile"
-          className="hidden md:block absolute w-72 lg:w-80 object-contain 
-            top-[25%] left-[10%] translate-x-[10px] translate-y-[-5px]"
-        />
+        {/* Mobile Chat Bubble (Now Above the Image) */}
+        <div
+          ref={chatMobileRef}
+          className="md:hidden absolute top-[40%] left-1/2 transform -translate-x-1/2 p-5 bg-white bg-opacity-95 rounded-xl shadow-lg w-10/12 text-center"
+        >
+          <h2 className="text-xl font-bold text-gray-800 mb-2">
+            Hi, I'm Rajjak Ahmed!
+          </h2>
+          <p className="text-base text-gray-700">
+            I love building interactive web apps and exploring new tech!
+          </p>
+        </div>
 
         {/* Mobile Profile Image */}
         <img
@@ -97,7 +101,16 @@ const ProfileSection = () => {
           src="rajjak.png"
           alt="Profile"
           className="absolute md:hidden w-40 sm:w-48 
-            top-[60%] left-[10%] transform -translate-y-1/2"
+            top-[60%] left-[50%] transform -translate-x-1/2 -translate-y-1/2"
+        />
+
+        {/* Desktop Profile Image */}
+        <img
+          ref={imageDesktopRef}
+          src="rajjak.png"
+          alt="Profile"
+          className="hidden md:block absolute w-72 lg:w-80 object-contain 
+            top-[25%] left-[10%] translate-x-[10px] translate-y-[-5px]"
         />
 
         {/* Desktop Chat Bubble */}
@@ -115,25 +128,13 @@ const ProfileSection = () => {
             I'm a Computer Science Engineer passionate about software development, AI, and web technologies. I love building interactive applications and exploring new tech innovations.
           </p>
         </div>
-
-        {/* Mobile Chat Bubble */}
-        <div
-          ref={chatMobileRef}
-          className="md:hidden absolute top-[30%] left-2/1 transform -translate-x-1/2 p-5 bg-white bg-opacity-95 rounded-xl shadow-lg w-10/17 text-center"
-        >
-          <h2 className="text-xl font-bold text-gray-800 mb-2">
-            Hi, I'm Rajjak Ahmed!
-          </h2>
-          <p className="text-base text-gray-700">
-            I love building interactive webapps and exploring new tech!
-          </p>
-        </div>
       </div>
     </div>
   );
 };
 
 export default ProfileSection;
+
 
 
 
