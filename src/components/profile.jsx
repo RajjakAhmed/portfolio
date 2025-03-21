@@ -119,7 +119,7 @@ const ProfileSection = () => {
         {/* Mobile Chat Bubble */}
         <div
           ref={chatMobileRef}
-          className="md:hidden absolute top-[30%] left-1/1 transform -translate-x-1/3 p-5 bg-white bg-opacity-95 rounded-xl shadow-lg w-10/17 text-center"
+          className="md:hidden absolute top-[30%] left-1/1 transform -translate-x-1/2 p-5 bg-white bg-opacity-95 rounded-xl shadow-lg w-10/17 text-center"
         >
           <h2 className="text-xl font-bold text-gray-800 mb-2">
             Hi, I'm Rajjak Ahmed!
