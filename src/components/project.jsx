@@ -34,12 +34,12 @@ const Projects = () => {
 
   const projects = [
     {
-      title: "Stock Prediction Chatbot",
+      title: "Stock Prediction bot",
       description:
         "A predictive tool that uses historical stock data and machine learning models to forecast future stock trends.",
       details:
-        "Built with Python, LSTM networks, and interactive UI components. The chatbot aggregates market data to provide real-time predictions and insights for investors.",
-      github: "https://github.com/yourusername/stock-prediction-chatbot",
+        "Built with Python, LSTM networks, The bot aggregates market data to provide  predictions and insights for investors .",
+      github: "https://github.com/RajjakAhmed/MultiStockL-STM-Model",
     },
     {
       title: "Sentiment Analysis for Product Review",
